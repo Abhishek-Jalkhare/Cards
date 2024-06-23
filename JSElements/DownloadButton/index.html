@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-['gilroy']">
+    <div class="main w-full h-screen bg-blue-200 flex  flex-col justify-center items-center">
+        <div class="download flex flex-col justify-center items-center">
+        <h1 class="text text-4xl font-base" >Click To Download</h1>
+        <div class="progress mt-5 text-lg hidden">0%</div>
+        <div class=" line h-[20px] w-full rounded-full bg-green-200  mt-5 overflow-hidden hidden ">
+            <div class="growth h-full  bg-green-500 rounded-full w-[0%]" ></div>
+        </div>
+        <button class="button mt-10 px-7 py-3 border-none rounded-full bg-green-400 active:scale-[0.90]  transition-all ease-[cubic-bezier(0.19, 1, 0.22, 1)] duration-300">Download</button>
+    </div>    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

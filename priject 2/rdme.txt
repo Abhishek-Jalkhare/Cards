@@ -1,0 +1,12 @@
+jb bhi space betweeb se center nhi ho posito n absolute se krna 
+inline element woh hote hai jinpe margin width height nhi lgti toh pehele usko inline block bnake
+dete hai.
+object cover see img uske div mein bdiye se aajati hai div ki h aaur w bhi dena pafhta hai.
+flex-reverse se alti palti  
+
+jb bhi image uske div se bahar jayen toh us div ka overflow hidden 
+relative deke z index de skte relative se upr nh iuthata div
+linear gradient(direction , color1 color 2)
+vh screen ke barabar height
+vw screen ke baraba height
+circle ke liye  rounded full square div bna kesquare ke liye height width dono ke liye sirf vw ya vh use krenge

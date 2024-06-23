@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.Main {
+  width: 100%;
+  height: 100%;
+  background: #dadada;
+}
+img {
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  border-radius: 20px;
+}
+#a {
+  left: 25%;
+}
+#b {
+  left: 50%;
+}
+#c {
+  left: 75%;
+}
+
+img:hover {
+  height: 60%;
+}
+.Main button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+
+  width: 20%;
+  height: 5%;
+  letter-spacing: 15px;
+  background-color: rgba(222, 184, 135, 0.233);
+  border-radius: 15px;
+}
+.Main button p {
+  font-family: "Gilroy";
+  font-weight: 300;
+  color: rgb(113, 65, 2);
+}
+.Main button :hover{
+    background-color: brown;
+}

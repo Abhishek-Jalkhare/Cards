@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    padding: 20px 50px;
+    font-size: 20px;
+
+    border-radius: 10px;
+    position: relative;
+    background-color: transparent;
+   overflow: hidden;
+}
+button::after{
+    content: "";
+    height: 0;
+    width:0;
+
+    position:absolute;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;   
+    z-index: -1;
+    transform: translate(-50% , -50%);
+    
+      
+}
+button:hover::after{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transition: all ease 1s;
+
+}

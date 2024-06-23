@@ -1,0 +1,44 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: gilroy;
+    background-color: black;
+}
+.parent{
+ width: 100%;   
+ 
+ background-color: black;
+ padding: 40px 0; 
+ white-space: nowrap;
+ overflow: hidden; 
+}
+h1{
+    font-size: 40px;
+
+    font-weight: 300;
+    margin-right: 30px;
+    color: white;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes move {
+ from{
+    transform: translate(0%);
+    color: white;
+ }    
+ to{
+    transform: translate(calc(-100% - 34px));
+    color: red;
+    
+
+ }
+}

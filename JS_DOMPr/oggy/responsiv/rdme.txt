@@ -1,0 +1,13 @@
+vh - 100 poori screen ki height viewport height
+vw - 100 poori sccreen ki width\ ye screen size /window sixe pe depend
+vmax - view port maximum height width ein se jo jyada uskw  rep mein lega
+vmin
+
+
+flex - 
+   wrap - apne size ko shrink nhi krte aur screen mein hee rhete 
+   nowrap - crollable bnte hai 
+   shrink - jb no wrap dete hai toh childs ko flex shrink zero dete
+   alogn item - flex start / flex end
+
+
