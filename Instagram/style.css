@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(148, 201, 222);
+    padding: 40px;
+    
+}
+.screen1{
+    background-color: white;
+    height: 100%;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+.screen2{
+    background: radial-gradient(black,rgb(15, 15, 15),rgb(30, 30, 30),rgb(45,45,45)); 
+    height: 100%;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px 20px;
+    display: none;
+}
+.stories{
+    display: flex;
+    gap:7px ;
+    height: 110px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+    
+}
+.story{
+    height: 80px;
+    width: 80px;
+    background: linear-gradient(to top right ,rgb(255, 214, 50),rgb(255, 181, 44),rgb(237, 4, 249));
+    border-radius: 40px;
+    margin-right: 4px;
+    padding: 3px;
+}
+.stories::-webkit-scrollbar{
+    background-color: #eaeaeada;
+    height: 4px;
+}
+.stories::-webkit-scrollbar-thumb{
+    background: #a2a2a2;
+    border-radius: 10px;
+    
+}
+
+.border{
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+    border-radius: 50%;
+    background: white;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    
+}
+.container{
+    height: 100%;
+    width : 80px;
+    display: inline-block;
+}
+h1{
+    text-align: center;
+    font-size: 12px;
+    font-family: 'gilroy';
+    margin-top: 2px;
+    font-weight: 500;
+}
+.line{
+    height: 3px;
+    width: 100%;
+    background-color: #848484;
+    border-radius: 20px;
+
+}
+.progress{
+  height: 100%;
+  width: 0%;
+  background-color: white;
+  
+} 
+.details{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}  
+.image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: beige;
+    border: 2px;
+    border: white;
+} 
+.name{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+h2{
+    
+    font-size: 15px;
+    font-family: 'gilroy';
+    color: white;
+    font-weight: 300;
+    
+}

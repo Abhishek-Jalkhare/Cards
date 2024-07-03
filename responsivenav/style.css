@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .nav p {
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+   
+    font-weight: 500;
+  }
+  .snav i {
+    display: block;
+  }
+
+  .snav h1 {
+    display: none;
+  }
+  .menu{
+    display: contents;
+  }
+}
+.top {
+  background-color: beige;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: -40%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
