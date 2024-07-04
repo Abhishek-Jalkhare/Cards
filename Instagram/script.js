@@ -81,36 +81,39 @@ display();
 var screen1 = document.querySelector(".screen1");
 var screen2 = document.querySelector(".screen2");
 var timer;
+var i;
 document.querySelector(".stories").addEventListener("click", function (event) {
   if (event.target.closest(".story")) {
     screen1.style.display = "none";
     screen2.style.display = "block";
-    var i = Number( event.target.closest(".story").id);
-    displayStory(i);    
+    i = Number(event.target.closest(".story").id);
+    
+    displayStory(i);
+   
   }
 });
 
 function displayStory(i) {
   var image = document.querySelector(".screen2 img");
-  var prog = document.querySelector(".screen2 .progress");
+    var prog = document.querySelector(".screen2 .progress");
   prog.style.width = "0%";
-  prog.style.transition = `all ${
-    instagramStories[i - 1].durationInSeconds
-  }s linear`;
+  prog.style.transition = `all ${ instagramStories[i - 1].durationInSeconds }s linear`;
   setTimeout(function () {
-    prog.style.width = "100%"; // width ko timeout deke badna hai kyuki
-    // browser ko transiition process krne ke lie time chahiye seedha 100% width kr denge toh
+    prog.style.width = "100%";
+      // width ko timeout deke badna hai kyuki
+     // browser ko transiition process krne ke lie time chahiye seedha 100% width kr denge toh
     //transition execute hee nhi hoga
   }, 1);
 
   image.setAttribute("src", instagramStories[i - 1].imageUrl);
-  document.querySelector(".screen2  h2").innerHTML =
-    instagramStories[i - 1].username;
+  document.querySelector(".screen2  h2").innerHTML = instagramStories[i - 1].username;
 
   timer = setTimeout(function () {
     screen2.style.display = "none";
     screen1.style.display = "block";
   }, instagramStories[i - 1].durationInSeconds * 1000);
+
+
   document.addEventListener("keydown", function (eve) {
     console.log(eve.keyCode);
     if (eve.keyCode == 27) {
@@ -118,17 +121,40 @@ function displayStory(i) {
       screen2.style.display = "none";
       screen1.style.display = "block";
     }
-    if (eve.keyCode == 37) {
-      if (i > 1) {
-        clearTimeout(timer);
-        displayStory(i - 1);
-      }
-    }
-    if (eve.keyCode == 39) {
-      if (i <= 6) {
-        clearTimeout(timer);
-        displayStory(i + 1);
-      }   
-    }
   });
 }
+
+
+
+const instagramPosts = [
+  {
+      likes: 150,
+      caption: "Sunset at the beach",
+      userName: "Emily Johnson",
+      imageLink: "https://example.com/emily_johnson.jpg"
+  },
+  {
+      likes: 230,
+      caption: "Hiking adventure",
+      userName: "Michael Smith",
+      imageLink: "https://example.com/michael_smith.jpg"
+  },
+  {
+      likes: 320,
+      caption: "Delicious breakfast",
+      userName: "Sarah Brown",
+      imageLink: "https://example.com/sarah_brown.jpg"
+  },
+  {
+      likes: 400,
+      caption: "City skyline",
+      userName: "Daniel Davis",
+      imageLink: "https://example.com/daniel_davis.jpg"
+  },
+  {
+      likes: 180,
+      caption: "Morning coffee",
+      userName: "Jessica Wilson",
+      imageLink: "https://example.com/jessica_wilson.jpg"
+  }
+];

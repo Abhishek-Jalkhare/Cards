@@ -52,12 +52,11 @@ html,body{
 }
 .stories::-webkit-scrollbar{
     background-color: #eaeaeada;
-    height: 4px;
+    height: 3px;
 }
 .stories::-webkit-scrollbar-thumb{
     background: #a2a2a2;
     border-radius: 10px;
-    
 }
 
 .border{
@@ -67,7 +66,7 @@ html,body{
     border-radius: 50%;
     background: white;
 }
-img{
+.stories img{
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -128,3 +127,35 @@ h2{
     font-weight: 300;
     
 }
+.feed{
+    height: calc(100% - 110px);
+    width: 100%;
+    overflow-y: auto;
+    padding: 10px;   
+}
+.feed .post img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feed .post .userdets{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+    
+}
+.feed .post .userdets .userimg{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* .feed .post .userdets .userimg img{
+    height: 100%;
+} */
+ h4{
+    font-size: 12px;
+    font-family: 'gilroy';
+    font-weight: 500;
+ }
