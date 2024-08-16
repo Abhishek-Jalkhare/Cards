@@ -1,0 +1,54 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+*{
+    height: 100%;
+    width: 100%;
+}
+
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.contents{
+    height: 300px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: aqua;
+    padding: 10px;
+   
+}
+.content1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.leftcontent{
+    height: 100%;
+    width: 50%;
+    
+}
+.leftcontent h1{
+ color: rgb(91, 91, 214);
+ font-size: 20px;
+ 
+}
+.leftcontent h2{
+    font-size: 15px;
+}
+.content2{
+    height: 40%;
+    width: 100%;
+}
+.content3{
+    height: 20%;
+    height: 100%;
+    background-color: blanchedalmond;
+}

@@ -79,7 +79,7 @@
       <div class="w-full flex items-center justify-center mb-40 ">
         <div class="container w-80 h-[410px] flex relative">
           <div
-            class="w-full h-full absolute z-[0] -left-2/3 scale-90 origin-bottom -rotate-12 rounded-xl p-2 bg-zinc-50 MyShadow2"
+            class="square11 w-full h-full absolute z-[0] -left-2/3 scale-90 origin-bottom -rotate-12 rounded-xl p-2 bg-zinc-50 MyShadow2 transition-all duration-100 ease-in"
           >
             <div
               class="w-full h-4/5 bg-[#F9E5E5] rounded-xl flex items-center justify-center"
@@ -100,7 +100,7 @@
             </div>
           </div>
           <div
-            class="w-full h-full absolute z-[2] rounded-xl p-2 bg-white MyShadow"
+            class="square1 w-full transition-all duration-100 ease-in h-full absolute z-[2] rounded-xl p-2 bg-white MyShadow"
           >
             <div
               class="w-full h-4/5 bg-[#DBE7FD] rounded-xl flex items-center justify-center"
@@ -121,7 +121,7 @@
             </div>
           </div>
           <div
-            class="w-full h-full absolute z-[0] left-2/3 scale-90 origin-bottom rotate-12 rounded-xl p-2 bg-zinc-50 MyShadow2"
+            class="square11 transition-all duration-100 ease-in w-full h-full absolute z-[0] left-2/3 scale-90 origin-bottom rotate-12 rounded-xl p-2 bg-zinc-50 MyShadow2"
           >
             <div
               class="w-full h-4/5 bg-[#FCEEDE] rounded-xl flex items-center justify-center"
@@ -159,9 +159,9 @@
           <img src="https://assets-global.website-files.com/62f1a490150fefe030f763b4/63f0d0ae63ea223aee1f626c_Feed%20Content.svg" alt="">
         </div>
       </div>
-      <div class="content flex flex-row-reverse  h-[500px] mt-[250px] justify-between gap-3">
+      <div class="content flex flex-row-reverse  h-[500px] mt-[250px] justify-between gap-3 mb-[400px]">
         <div class="col1 w-1/2 flex flex-col">
-          <div class="bodrdiv border-[1px] border-zinc-200 w-[34%] text-center rounded-full px-2 py-1">Powerfukl feed Option</div>
+          <div class="bodrdiv border-[1px] border-zinc-200 w-[34%] text-center rounded-full px-2 py-1">Powerful feed Option</div>
           <h1 class="text-5xl font-bold mt-5 leading-[60px]"> Build feeds with easy <br> <<span class="text-blue-700">attributes</span>>. Stay in control of everything.
           <h5 class= "text-lg mt-5 font-medium leading-[35px]">Our platform empowers you to build quality personalized feeds, tailored to you and your customer's websites. Win new leads, improve trust, encourage community and much more with <span class="font-semibold">unlimited feeds, across unlimited sites on every single plan</span>
           <div class="button"><button class="flex gap-2 px-3 py-2 rounded-full  mt-8 border-[1px] border-zinc-100 " >Learn More
@@ -176,4 +176,19 @@
 
     </div>
   </body>
+  <script>
+    var b = document.querySelectorAll(".square11");
+    var a = document.querySelector(".square1");
+    a.addEventListener("mouseenter", function(){
+      b.forEach( function(ele){
+        ele.style.scale = 0.9;
+      })
+    })
+    a.addEventListener("mouseleave" , function(){
+      b.forEach(  function(ele){
+        ele.style.scale = 1;
+      })
+    })
+  
+  </script>
 </html>
